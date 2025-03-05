@@ -1,0 +1,112 @@
+    /* General styling for the Features section */
+    .features-section {
+        background-image: url('https://plus.unsplash.com/premium_photo-1683309565422-77818a287060?fm=jpg&q=60&w=3000&ixid=rb-4.0.3&ixlib=rb-4.0.3'); /* Background image URL */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 50px 20px;
+        position: relative;
+        color: white;
+    }
+    
+    .features-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+        z-index: 0;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+        position: relative;
+        z-index: 1;
+        background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+        padding: 30px;
+        border-radius: 10px;
+    }
+    
+    .title {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 40px;
+        color: black; /* Black color for the title */
+    }
+    
+    /* Feature List Layout */
+    .feature-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    
+    .feature-item {
+        background-color: rgba(255, 255, 255, 0.8); /* Light semi-transparent background */
+        padding: 20px;
+        border-radius: 10px;
+        width: 30%; /* Three items per row on large screens */
+        margin-bottom: 30px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .feature-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Icon styling */
+    .feature-icon {
+        font-size: 3rem;
+        margin-bottom: 15px;
+        color: #007bff; /* Color for the icons */
+    }
+    
+    .feature-content h4 {
+        font-size: 1.5rem;
+        color: #007bff;
+        margin-bottom: 15px;
+    }
+    
+    .feature-content p {
+        font-size: 1rem;
+        color: #333;
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+        .feature-item {
+        width: 48%; /* Two items per row on medium-sized screens */
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .feature-list {
+        justify-content: center;
+        }
+    
+        .feature-item {
+        width: 90%; /* Full-width items on smaller screens */
+        }
+    
+        .title {
+        font-size: 2rem;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .title {    
+        font-size: 1.8rem;
+        }
+    }
+        

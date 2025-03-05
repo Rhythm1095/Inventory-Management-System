@@ -1,0 +1,32 @@
+Inventory Management System:
+
+Features:
+
+1)Sign up 
+2)Login
+3)Product/Stock information(quantity,image of the product,name)
+4)Access to owner and employees
+5)Graph format representation of the products to the owner
+6)Accessibility to the employees to add or delete the quantity of the products
+7)Alert message when the stock comes down to a certain quantity 
+
+Front End:
+1)React
+2)Bootstrap/html-css
+3)Routes
+4)Components:
+  4.1)Home:
+    4.1.1)A little information about the project
+  4.2)Features
+    4.2.1)Show the users the features we will be providing them 
+  4.3)Sign up:To sign up a new account as employees
+  4.4)Login:To login as Admin or employee
+  4.5)Navbar:To have a navbar that redirects to these pages
+Back End:
+1)Java Script
+2)Node js
+3)Express js 
+
+Database:
+1)MongoDB
+
