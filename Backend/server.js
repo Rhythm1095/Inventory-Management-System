@@ -24,7 +24,7 @@ const productDB = mongoose.createConnection(
 );
 
 productDB.on("connected", () => {
-  console.log("Connected to productDB");
+  console.log("Connected to productDB");//connected to productDB
 });
 
 productDB.on("error", (err) => {
